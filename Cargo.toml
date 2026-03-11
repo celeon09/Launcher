@@ -1,6 +1,6 @@
 [package]
 name = "launcher"
-version = "0.1.0"
+version = "0.0.1-dev"
 edition = "2021"
 description = "Minimal application launcher for GNOME"
 license = "MIT"
@@ -26,5 +26,7 @@ strip = true
 
 [package.metadata.generate-rpm]
 assets = [
-    { source = "target/release/launcher", dest = "/usr/bin/launcher", mode = "755" }
+    { source = "target/release/launcher", dest = "/usr/bin/launcher", mode = "755" },
+    { source = "assets/com.example.launcher.desktop", dest = "/usr/share/applications/com.example.launcher.desktop", mode = "644" },
+    { source = "assets/com.example.launcher.svg", dest = "/usr/share/icons/hicolor/scalable/apps/com.example.launcher.svg", mode = "644" }
 ]

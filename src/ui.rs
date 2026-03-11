@@ -19,6 +19,7 @@ pub fn build_ui(app: &adw::Application) -> adw::ApplicationWindow {
         .resizable(false)
         .decorated(false)
         .hide_on_close(true)
+        .icon_name("com.example.launcher")
         .build();
 
     window.add_css_class("launcher-window");

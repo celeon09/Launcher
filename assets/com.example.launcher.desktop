@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Application Launcher
+Comment=A blisteringly fast, minimalistic, and native application launcher for Linux
+Exec=launcher
+Icon=com.example.launcher
+Terminal=false
+Type=Application
+Categories=Utility;System;
+# Run as a background service by default when invoked
+DBusActivatable=true
+StartupNotify=false
